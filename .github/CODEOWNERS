@@ -1,0 +1,8 @@
+# Code owners for promotion manifests.
+#
+# IMPORTANT: this is intentionally scoped ONLY to the promotion paths.
+# It does NOT gate normal dev PRs — Scion agents keep creating/merging PRs freely.
+# A PR only requires an owner's approval if it touches a path listed below.
+
+/release/uat/  @slava-samokhina
+/release/prod/ @slava-samokhina
