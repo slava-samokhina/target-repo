@@ -1,0 +1,15 @@
+# Code owners for this repo.
+#
+# IMPORTANT: this is intentionally scoped ONLY to the promotion manifests.
+# It does NOT gate normal dev PRs — Scion agents keep creating/merging PRs freely.
+# A PR only requires an owner's approval if it touches a path listed below.
+#
+# This is the single human gate for UAT: a promotion PR (which only changes
+# release/uat/**) must be approved by an owner before it can auto-merge and deploy.
+#
+# Same gate for prod. The prod agent opens the PR with auto-merge; this
+# approval plus green checks are both required before it merges and deploys.
+# Dev PRs and UAT promotion PRs do not touch this path.
+
+/release/uat/ @slava-samokhina
+/release/prod/ @slava-samokhina
